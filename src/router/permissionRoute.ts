@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 16:52:22
+ * @LastEditTime: 2024-03-30 17:59:53
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -35,6 +35,15 @@ const routes: RouteRecordRaw[] = [
           title: "首页",
           icon: BaseIcon,
         },
+      },
+      {
+        path: "fun",
+        name: "fun",
+        meta: {
+          title: "常用方法",
+          icon: BaseIcon,
+        },
+        component: () => import("@/views/common/index.vue"),
       },
       {
         path: "algorithm",

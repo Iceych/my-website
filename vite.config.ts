@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2024-03-21 08:54:17
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 15:58:34
+ * @LastEditTime: 2024-03-30 18:02:44
  * @FilePath: /个人项目/vite.config.ts
  * @Description: write something
  *
@@ -23,7 +23,7 @@ import anchor from "markdown-it-anchor";
 
 import injectFiles from "./plugins/injectFiles";
 
-const baseUrlPath = process.env.NODE_ENV === "production" ? "/system/" : "/system/";
+const baseUrlPath = process.env.NODE_ENV === "production" ? "/" : "/";
 
 // https://vitejs.dev/config/
 export default defineConfig({
