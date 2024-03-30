@@ -1,12 +1,12 @@
 /*
- * @Author: chengchunlin 
+ * @Author: chengchunlin
  * @Date: 2024-03-21 08:54:17
- * @LastEditors: chengchunlin 
- * @LastEditTime: 2024-03-30 15:13:57
+ * @LastEditors: chengchunlin chengchunlin@eastmoney.com
+ * @LastEditTime: 2024-03-30 15:58:34
  * @FilePath: /个人项目/vite.config.ts
  * @Description: write something
- * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ *
+ * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved.
  */
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
@@ -14,6 +14,7 @@ import { defineConfig } from "vite";
 import inject from "@rollup/plugin-inject";
 import resolve from "@rollup/plugin-node-resolve";
 import vue from "@vitejs/plugin-vue";
+import Components from "unplugin-vue-components/vite";
 import Markdown from "vite-plugin-md";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import babel from "vite-plugin-babel";
@@ -29,6 +30,13 @@ export default defineConfig({
   base: baseUrlPath,
   plugins: [
     vue({ include: [/\.vue$/, /\.md$/] }),
+    Components({
+      // allow auto load markdown components under `./src/components/`
+      extensions: ["vue", "md"],
+
+      // allow auto import and register components used in markdown
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+    }),
     Markdown({
       markdownItOptions: {
         html: true,
