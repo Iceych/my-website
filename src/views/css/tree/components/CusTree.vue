@@ -100,8 +100,6 @@ function drawForest(num) {
     const disW = random(-800, 800),
       disH = random(0, 500);
     console.log(disW, disH);
-    console.dir(canvas);
-    console.log("iii-111", canvas, canvas.width, canvas.height);
     draw(W / 2, H, random(70, 120), -Math.PI / 2, 12, 25); // 第一根垂直的树干
     num--;
   }
