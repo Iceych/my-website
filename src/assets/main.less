@@ -1,0 +1,136 @@
+@import 'ant-design-vue/dist/reset.css';
+@import './var.less';
+@import './global.less';
+@import './antd.less';
+@import './markdown.less';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+p { margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.noSelect{  /* 禁止选中 */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// 图标
+.iconfont {
+  font-size: 20px!important;
+  color: #5cd9e8;
+}
+
+// 宽高
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+
+// 文本一行多余显示省略号
+.text-over{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex{
+  flex: 1 0 auto;
+}
+
+each(@flex-direction, {
+  .flex-@{key} {
+    display: flex;
+    flex-direction: @value;
+  }
+})
+each(@flex-jc, {
+  .jc-@{key} {
+    justify-content: @value;
+  }
+})
+each(@flex-ai, {
+  .ai-@{key} {
+    align-items: @value;
+  }
+})
+
+
+// 字体大小全局变量1-100 px; ex: .f12 = font-size: 12px; .f24 = font-size: 24px;
+.font(@i) when(@i <= 100){
+  .f@{i} {
+     font-size: @i + 0px ;
+  }
+  .font((@i + 1));
+}
+.font(12);
+
+// margin-top枚举 1-100  ex: .mt12 =  margin-top: 12px;
+.marginTop(@i) when(@i <= 100){
+  .mt@{i} {
+     margin-top: @i + 0px ;
+  }
+  .marginTop((@i + 1));
+}
+.marginTop(1);
+
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.ant-table-column-title {
+  font-weight: 600;
+}

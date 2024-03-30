@@ -1,0 +1,48 @@
+.bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  align-items: center;
+}
+.centerV {
+  justify-content: center;
+}
+.between {
+  justify-content: space-between;
+}
+.around {
+  justify-content: space-around;
+}
+.end {
+  justify-content: flex-end;
+}
+.endV {
+  align-items: flex-end;
+}
+.start {
+  justify-content: flex-start;
+}
+.startV {
+  align-items: flex-start;
+}
+
+// gap枚举 1~200; ex: .f12 = font-size: 12px; .f24 = font-size: 24px;
+.gap(@i) when(@i <= 100) {
+  .gap@{i} {
+    gap: @i + 0px;
+  }
+  .gap((@i + 1));
+}
+.gap(1);
