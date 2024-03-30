@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 16:22:26
+ * @LastEditTime: 2024-03-30 16:52:22
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -52,6 +52,14 @@ const routes: RouteRecordRaw[] = [
               title: "接雨水",
             },
             component: () => import("@/views/algorithm/hold-rain/index.vue"),
+          },
+          {
+            path: "sortOffset",
+            name: "sortOffset",
+            meta: {
+              title: "位移排序",
+            },
+            component: () => import("@/views/algorithm/sort-offset/index.vue"),
           },
         ],
       },
