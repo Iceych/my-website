@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 08:55:13
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 17:49:21
+ * @LastEditTime: 2024-05-07 13:53:00
  * @Description: 常用通用工具函数
  *
  * Copyright (c) 2023 by 天天基金/chengchunlin, All Rights Reserved.
@@ -156,13 +156,54 @@ export const checkPhone = (phone: string) => {
  */
 export function strlen(str: string) {
   let len = 0;
-  for (let i = 0; i < str.length; i += 1) {
-    const isChinese = /[\u4e00-\u9fa5,\uff01-\uffee]/.test(str[i]); // 是否中文
-    const isUpper = /[A-Z]/.test(str[i]); // 是否大写
-    const charLen = isChinese || isUpper ? 1 : 0.5;
-    len += charLen;
+  for (let i = 0; i < str.length; ) {
+    const code = str.codePointAt(i) || 0;
+
+    if (code <= 255) len += 0.5;
+    // else if (code > 65535) len += 2;
+    else len += 1;
+
+    if (code > 65535) i += 2;
+    else i += 1;
   }
   return len;
+
+  // let len = 0;
+  // for (let i = 0; i < str.length; i += 1) {
+  //   const isChinese = /[\u4e00-\u9fa5,\uff01-\uffee]/.test(str[i]); // 是否中文
+  //   const isUpper = /[A-Z]/.test(str[i]); // 是否大写
+  //   const charLen = isChinese || isUpper ? 1 : 0.5;
+  //   len += charLen;
+  // }
+  // return len;
+}
+
+/**
+ * @description 从指定位置截取指定长度的字符串
+ * @param str
+ * @param count
+ * @param start
+ * @returns
+ */
+function sliceStr(str: String, count = Infinity, start = 0) {
+  let len = 0,
+    res = "";
+  for (let i = start; i < str.length; ) {
+    const code = str.codePointAt(i) || 0,
+      char = String.fromCodePoint(code);
+
+    if (code <= 255) len += 0.5;
+    // else if (code > 65535) len += 2;
+    else len += 1;
+
+    res += char;
+
+    if (code > 65535) i += 2;
+    else i += 1;
+
+    if (len >= count) return res;
+  }
+  return res;
 }
 
 /**
@@ -332,6 +373,7 @@ export default {
   randomInt,
   checkPhone,
   strlen,
+  sliceStr,
   cusTrim,
   getCookie,
   delCookie,
