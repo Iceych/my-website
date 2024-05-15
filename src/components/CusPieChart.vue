@@ -1,12 +1,12 @@
 <!--
  * @Author: chengchunlin 
  * @Date: 2024-03-07 13:51:59
- * @LastEditors: chengchunlin 
- * @LastEditTime: 2024-03-28 19:44:29
+ * @LastEditors: chengchunlin chengchunlin@eastmoney.com
+ * @LastEditTime: 2024-05-15 19:12:45
  * @FilePath: /个人项目/src/components/CusPieChart.vue
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <ProChart class="chart" :option="option" />
@@ -14,7 +14,6 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { getPieColor } from '@/utils/fun';
 
 import ProChart from '@/components/ProChart/index.vue';
 

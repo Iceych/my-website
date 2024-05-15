@@ -6,7 +6,7 @@
  * @FilePath: /back-template/plugins/injectFiles.ts
  * @Description: write something
  *
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved.
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved.
  */
 import { existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath, URL } from 'node:url';

@@ -2,11 +2,11 @@
  * @Author: chengchunlin
  * @Date: 2024-03-21 08:54:17
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 18:02:44
+ * @LastEditTime: 2024-05-15 19:35:09
  * @FilePath: /个人项目/vite.config.ts
  * @Description: write something
  *
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved.
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved.
  */
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
@@ -23,7 +23,7 @@ import anchor from "markdown-it-anchor";
 
 import injectFiles from "./plugins/injectFiles";
 
-const baseUrlPath = process.env.NODE_ENV === "production" ? "/" : "/";
+const baseUrlPath = process.env.NODE_ENV === "production" ? "/my-website" : "/";
 
 // https://vitejs.dev/config/
 export default defineConfig({

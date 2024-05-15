@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/components/CusRangePicker.vue
  * @Description: 带预设时间的时间选择器
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <div class="select-box row center">

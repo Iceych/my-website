@@ -6,7 +6,7 @@
  * @FilePath: /个人项目/src/components/ProChart/chart.js
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
  */
 
 // 引入 echarts 核心模块，核心模块提供了 echarts 使用必须要的接口。

@@ -11,7 +11,6 @@ declare module 'vue' {
     AutoTooltip: typeof import('./src/components/AutoTooltip.vue')['default']
     ConfirmBtn: typeof import('./src/components/ProTable/components/ConfirmBtn.vue')['default']
     CusBarChart: typeof import('./src/components/CusBarChart.vue')['default']
-    CusHeart: typeof import('./src/components/CusHeart.vue')['default']
     CusLineChart: typeof import('./src/components/CusLineChart.vue')['default']
     CusPieChart: typeof import('./src/components/CusPieChart.vue')['default']
     CusRangePicker: typeof import('./src/components/CusRangePicker.vue')['default']

@@ -6,7 +6,7 @@
  * @FilePath: /个人项目/src/components/index.ts
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
  */
 import type { App } from "vue";
 // const files = import.meta.glob('./*.vue'); // 异步

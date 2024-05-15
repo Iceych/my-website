@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/views/home/index.vue
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/chengchunlin, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <a-card>首页</a-card>

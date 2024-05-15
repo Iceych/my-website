@@ -5,7 +5,7 @@
  * @LastEditTime: 2024-05-07 13:53:00
  * @Description: 常用通用工具函数
  *
- * Copyright (c) 2023 by 天天基金/chengchunlin, All Rights Reserved.
+ * Copyright (c) 2023 by 程春霖, All Rights Reserved.
  */
 import { message } from "ant-design-vue";
 

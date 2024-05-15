@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/stores/sysInfo.ts
  * @Description: 系统相关数据（路由表）
  *
- * Copyright (c) 2024 by 天天基金/chengchunlin, All Rights Reserved.
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved.
  */
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';

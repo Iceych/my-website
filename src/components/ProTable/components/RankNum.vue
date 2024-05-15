@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/components/ProTable/components/RankNum.vue
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <div class="row center centerV">

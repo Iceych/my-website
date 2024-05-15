@@ -6,7 +6,7 @@
  * @FilePath: /个人项目/src/components/CusLineChart.vue
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <ProChart class="chart" :option="option" />

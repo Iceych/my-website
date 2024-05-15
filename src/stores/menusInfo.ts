@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/stores/menusInfo.ts
  * @Description: 侧边栏 特殊属性相关数据
  *
- * Copyright (c) 2024 by 天天基金/chengchunlin, All Rights Reserved.
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved.
  */
 import { ref, type Component } from 'vue';
 import { defineStore } from 'pinia';

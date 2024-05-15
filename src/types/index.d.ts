@@ -6,7 +6,7 @@
  * @FilePath: /back-template/src/types/index.d.ts
  * @Description:
  *
- * Copyright (c) 2022 by 朱育仪/天天基金, All Rights Reserved.
+ * Copyright (c) 2022 by 程春霖, All Rights Reserved.
  */
 import tools from '@/utils/tools';
 

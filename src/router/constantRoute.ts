@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/router/constantRoute.ts
  * @Description: 无需权限的静态路由
  *
- * Copyright (c) 2024 by 天天基金/chengchunlin, All Rights Reserved.
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved.
  */
 import { type RouteRecordRaw } from 'vue-router';
 

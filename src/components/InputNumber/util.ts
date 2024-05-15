@@ -6,7 +6,7 @@
  * @FilePath: /个人项目/src/components/InputNumber/util.ts
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
  */
 export const formatIntValue = (val: any, { intPlaces, max, min }: any) => {
   const t = val.charAt(0);

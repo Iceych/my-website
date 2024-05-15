@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/views/auth-loading.vue
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/chengchunlin, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <div class="example flex-center" v-if="!sysStore.authList">

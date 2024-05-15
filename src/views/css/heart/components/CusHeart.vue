@@ -2,11 +2,11 @@
  * @Author: chengchunlin chengchunlin@eastmoney.com
  * @Date: 2024-03-30 15:36:46
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 16:09:17
+ * @LastEditTime: 2024-05-15 20:12:06
  * @FilePath: /个人项目/src/views/css/heart/components/CusHeart.vue
  * @Description: write something
  * 
- * Copyright (c) 2024 by 天天基金/程春霖, All Rights Reserved. 
+ * Copyright (c) 2024 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <div class="heart"></div>

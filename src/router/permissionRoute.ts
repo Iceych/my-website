@@ -2,11 +2,11 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-03-30 17:59:53
+ * @LastEditTime: 2024-05-15 19:58:41
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
- * Copyright (c) 2023 by 天天基金/chengchunlin, All Rights Reserved.
+ * Copyright (c) 2023 by 程春霖, All Rights Reserved.
  */
 import { type RouteRecordRaw } from "vue-router";
 import MenuLayOut from "@/views/menuLayout/index.vue"; // 这个是管理系统左侧菜单
@@ -26,7 +26,7 @@ const routes: RouteRecordRaw[] = [
     path: "/",
     name: "root",
     component: MenuLayOut,
-    redirect: { name: "home" },
+    redirect: { name: "fun" },
     children: [
       {
         path: "home",

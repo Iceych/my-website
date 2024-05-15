@@ -1,12 +1,12 @@
 <!--
  * @Author: chengchunlin 
  * @Date: 2023-11-01 10:06:42
- * @LastEditors: chengchunlin 
- * @LastEditTime: 2024-03-30 15:12:28
+ * @LastEditors: chengchunlin chengchunlin@eastmoney.com
+ * @LastEditTime: 2024-05-15 19:57:29
  * @FilePath: /个人项目/src/views/menuLayout/index.vue
  * @Description: 侧边导航栏 布局
  * 
- * Copyright (c) 2023 by 天天基金/chengchunlin, All Rights Reserved. 
+ * Copyright (c) 2023 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <a-layout class="wrap">
@@ -18,8 +18,8 @@
       theme="light"
     >
       <div :class="['logo-title', { collapsed }]">
-        <img class="logo" src="@/assets/img/logo.png" />
-        <span v-if="!collapsed" class="title noSelect">天天基金</span>
+        <img class="logo" src="@/assets/img/logo.jpg" />
+        <span v-if="!collapsed" class="title noSelect">Icey</span>
       </div>
       <a-menu
         :selectedKeys="[route.meta?.menuName || route.name]"
@@ -154,7 +154,7 @@ const { toggle, isFullscreen } = useFullscreen();
   box-shadow: 2px 0 6px 0 rgba(0, 0, 0, 0.12);
 }
 .logo-title {
-  padding: 16px 16px 24px;
+  padding: 10px 16px 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -165,8 +165,8 @@ const { toggle, isFullscreen } = useFullscreen();
   padding-left: 23px;
 }
 .logo {
-  width: 32px;
-  height: 32px;
+  height: 50px;
+  // height: 42.5px;
   border-radius: 5px;
   margin-right: 10px;
 }

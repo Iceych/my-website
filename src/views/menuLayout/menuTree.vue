@@ -6,7 +6,7 @@
  * @FilePath: /cfh-web/src/views/menuLayout/menuTree.vue
  * @Description: 导航栏树状栏
  * 
- * Copyright (c) 2023 by 天天基金/chengchunlin, All Rights Reserved. 
+ * Copyright (c) 2023 by 程春霖, All Rights Reserved. 
 -->
 <template>
   <template v-for="item in props.menus" :key="item.name">
