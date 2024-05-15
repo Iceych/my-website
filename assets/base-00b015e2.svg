@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>基本信息</title>
+    <g id="配置管理-其他配置" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="配置管理/其他配置/卡券管理/我的卡片备份" transform="translate(-20.000000, -82.000000)">
+            <g id="编组-2" transform="translate(0.000000, 72.000000)">
+                <g id="3.Navigation导航/4.Menu导航菜单/左侧导航选项/一级无图标/默认-更多备份" transform="translate(8.000000, 0.000000)">
+                    <g id="应用管理" transform="translate(12.000000, 10.000000)">
+                        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                        <g id="编组-3" transform="translate(2.500000, 1.000000)">
+                            <rect id="矩形" fill="#FA5914" x="2.5" y="7" width="10" height="1" rx="0.5"></rect>
+                            <rect id="矩形备份" fill="#FA5914" x="2.5" y="10" width="6" height="1" rx="0.5"></rect>
+                            <path d="M11.25,2 L13.125,2 C14.1605339,2 15,2.83946609 15,3.875 L15,15.125 C15,16.1605339 14.1605339,17 13.125,17 L1.875,17 C0.839466094,17 0,16.1605339 0,15.125 L0,3.875 C0,2.83946609 0.839466094,2 1.875,2 L3.75,2 L3.75,2" id="路径" stroke="#FA5914" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <rect id="矩形" stroke="#FDBA0D" x="4" y="0.5" width="7" height="3" rx="1.5"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
