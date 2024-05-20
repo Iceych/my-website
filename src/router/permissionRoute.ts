@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-05-15 19:58:41
+ * @LastEditTime: 2024-05-20 19:09:18
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -96,6 +96,25 @@ const routes: RouteRecordRaw[] = [
               title: "画树",
             },
             component: () => import("@/views/css/tree/index.vue"),
+          },
+        ],
+      },
+      {
+        path: "vite",
+        name: "vite",
+        meta: {
+          title: "vite",
+          icon: BaseIcon,
+        },
+        redirect: { name: "config" },
+        children: [
+          {
+            path: "config",
+            name: "config",
+            meta: {
+              title: "基本配置",
+            },
+            component: () => import("@/views/vite/baseConfig/index.vue"),
           },
         ],
       },
