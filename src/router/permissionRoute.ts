@@ -2,14 +2,14 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-05-20 19:09:18
+ * @LastEditTime: 2024-05-21 17:45:19
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
  * Copyright (c) 2023 by 程春霖, All Rights Reserved.
  */
-import { type RouteRecordRaw } from "vue-router";
 import MenuLayOut from "@/views/menuLayout/index.vue"; // 这个是管理系统左侧菜单
+import { type RouteRecordRaw } from "vue-router";
 
 import BaseIcon from "@/assets/img/base.svg";
 
@@ -115,6 +115,33 @@ const routes: RouteRecordRaw[] = [
               title: "基本配置",
             },
             component: () => import("@/views/vite/baseConfig/index.vue"),
+          },
+        ],
+      },
+      {
+        path: "git",
+        name: "git",
+        meta: {
+          title: "git",
+          icon: BaseIcon,
+        },
+        redirect: { name: "command" },
+        children: [
+          {
+            path: "command",
+            name: "command",
+            meta: {
+              title: "常用命令",
+            },
+            component: () => import("@/views/git/commonCommands.vue"),
+          },
+          {
+            path: "deleteBranch",
+            name: "deleteBranch",
+            meta: {
+              title: "清除本地分支",
+            },
+            component: () => import("@/views/git/deleteLocalBranch.vue"),
           },
         ],
       },
