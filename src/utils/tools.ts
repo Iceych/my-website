@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 08:55:13
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-05-07 13:53:00
+ * @LastEditTime: 2024-05-21 14:48:10
  * @Description: 常用通用工具函数
  *
  * Copyright (c) 2023 by 程春霖, All Rights Reserved.
@@ -180,9 +180,9 @@ export function strlen(str: string) {
 
 /**
  * @description 从指定位置截取指定长度的字符串
- * @param str
- * @param count
- * @param start
+ * @param str 字符串
+ * @param count 截取长度
+ * @param start 起始位置
  * @returns
  */
 function sliceStr(str: String, count = Infinity, start = 0) {
