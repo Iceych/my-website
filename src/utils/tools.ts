@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 08:55:13
  * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-05-21 14:48:10
+ * @LastEditTime: 2024-05-27 11:06:09
  * @Description: 常用通用工具函数
  *
  * Copyright (c) 2023 by 程春霖, All Rights Reserved.
@@ -349,6 +349,28 @@ export const range = (start: number, end: number) => {
     result.push(i);
   }
   return result;
+};
+
+// TODO
+/**
+ * @description 复制
+ * @param {*} text
+ */
+export const copyFun = (text: string) => {
+  const cInput = document.getElementById("copyInput") as HTMLInputElement;
+
+  if (!cInput) return;
+
+  cInput.value = text;
+
+  cInput.select();
+  const a = document.execCommand("Copy"); // 执行浏览器复制命令
+  if (!a) {
+    // 兼容ios
+    cInput.select(); // 选择对象
+    cInput.setSelectionRange(0, cInput.value.length);
+    document.execCommand("Copy"); // 执行浏览器复制命令
+  }
 };
 
 export default {
