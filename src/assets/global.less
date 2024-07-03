@@ -38,6 +38,15 @@
   align-items: flex-start;
 }
 
+// 隐藏滚动条
+.hideScrollBar {
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE、Edge
+  &::-webkit-scrollbar {
+    display: none; // webkit
+  }
+}
+
 // gap枚举 1~200; ex: .f12 = font-size: 12px; .f24 = font-size: 24px;
 .gap(@i) when(@i <= 100) {
   .gap@{i} {
