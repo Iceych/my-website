@@ -145,6 +145,52 @@ const routes: RouteRecordRaw[] = [
           },
         ],
       },
+      {
+        path: "node",
+        name: "node",
+        meta: {
+          title: "node",
+          icon: BaseIcon,
+        },
+        redirect: { name: "nodeVersionSwitch" },
+        children: [
+          {
+            path: "nodeVersionSwitch",
+            name: "nodeVersionSwitch",
+            meta: {
+              title: "node版本切换",
+            },
+            component: () => import("@/views/node/switchVersion.vue"),
+          },
+        ],
+      },
+      {
+        path: "vscode",
+        name: "vscode",
+        meta: {
+          title: "vscode",
+          icon: BaseIcon,
+        },
+        redirect: { name: "base" },
+        children: [
+          {
+            path: "base",
+            name: "base",
+            meta: {
+              title: "常用配置",
+            },
+            component: () => import("@/views/vscode/base.vue"),
+          },
+          {
+            path: "deleteBranch",
+            name: "deleteBranch",
+            meta: {
+              title: "常用插件",
+            },
+            component: () => import("@/views/vscode/commonPlugin.vue"),
+          },
+        ],
+      },
     ],
   },
   /**

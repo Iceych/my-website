@@ -14,12 +14,12 @@ import { defineConfig } from "vite";
 import inject from "@rollup/plugin-inject";
 import resolve from "@rollup/plugin-node-resolve";
 import vue from "@vitejs/plugin-vue";
-import Components from "unplugin-vue-components/vite";
-import Markdown from "vite-plugin-md";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-import babel from "vite-plugin-babel";
-import prism from "markdown-it-prism";
 import anchor from "markdown-it-anchor";
+import prism from "markdown-it-prism";
+import Components from "unplugin-vue-components/vite";
+import babel from "vite-plugin-babel";
+import Markdown from "vite-plugin-md";
 
 import injectFiles from "./plugins/injectFiles";
 
@@ -82,7 +82,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: "local.1234567.com.cn",
+    host: "localhost",
     port: 8084,
     https: false,
   },
