@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin 1875620109@qq.com
- * @LastEditTime: 2024-08-11 12:28:14
+ * @LastEditTime: 2024-08-11 13:04:25
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -43,23 +43,31 @@ const routes: RouteRecordRaw[] = [
           title: "规范",
           icon: BaseIcon,
         },
-        redirect: { name: "project" },
+        redirect: { name: "project-standard" },
         children: [
           {
-            path: "project",
-            name: "project",
+            path: "project-standard",
+            name: "project-standard",
             meta: {
               title: "项目规范",
             },
             component: () => import("@/views/standards/project.vue"),
           },
           {
-            path: "js",
-            name: "js",
+            path: "js-standard",
+            name: "js-standard",
             meta: {
               title: "js规范",
             },
             component: () => import("@/views/standards/js.vue"),
+          },
+          {
+            path: "css-standard",
+            name: "css-standard",
+            meta: {
+              title: "css规范",
+            },
+            component: () => import("@/views/standards/css.vue"),
           },
         ],
       },
