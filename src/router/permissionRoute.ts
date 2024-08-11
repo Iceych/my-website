@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin 1875620109@qq.com
- * @LastEditTime: 2024-08-11 14:18:53
+ * @LastEditTime: 2024-08-11 14:26:32
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -43,8 +43,16 @@ const routes: RouteRecordRaw[] = [
           title: "规范",
           icon: BaseIcon,
         },
-        redirect: { name: "project-standard" },
+        redirect: { name: "workflow-standard" },
         children: [
+          {
+            path: "workflow-standard",
+            name: "workflow-standard",
+            meta: {
+              title: "工作流规范",
+            },
+            component: () => import("@/views/standards/workflow.vue"),
+          },
           {
             path: "project-standard",
             name: "project-standard",
