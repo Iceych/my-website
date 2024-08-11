@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin 1875620109@qq.com
- * @LastEditTime: 2024-08-11 13:14:40
+ * @LastEditTime: 2024-08-11 14:18:53
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -76,6 +76,14 @@ const routes: RouteRecordRaw[] = [
               title: "组件分类",
             },
             component: () => import("@/views/standards/component.vue"),
+          },
+          {
+            path: "name-standard",
+            name: "name-standard",
+            meta: {
+              title: "命名规范",
+            },
+            component: () => import("@/views/standards/name.vue"),
           },
         ],
       },
