@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin 1875620109@qq.com
- * @LastEditTime: 2024-08-11 14:26:32
+ * @LastEditTime: 2024-08-11 16:16:54
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -28,14 +28,6 @@ const routes: RouteRecordRaw[] = [
     component: MenuLayOut,
     redirect: { name: "fun" },
     children: [
-      {
-        path: "home",
-        name: "home",
-        meta: {
-          title: "首页",
-          icon: BaseIcon,
-        },
-      },
       {
         path: "standard",
         name: "standard",
@@ -103,6 +95,15 @@ const routes: RouteRecordRaw[] = [
           icon: BaseIcon,
         },
         component: () => import("@/views/common/index.vue"),
+      },
+      {
+        path: "technology",
+        name: "technology",
+        meta: {
+          title: "技术选型",
+          icon: BaseIcon,
+        },
+        component: () => import("@/views/technology/index.vue"),
       },
       {
         path: "algorithm",
