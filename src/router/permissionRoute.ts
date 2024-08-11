@@ -1,8 +1,8 @@
 /*
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
- * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-05-21 17:45:19
+ * @LastEditors: chengchunlin 1875620109@qq.com
+ * @LastEditTime: 2024-08-11 10:26:34
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -35,6 +35,25 @@ const routes: RouteRecordRaw[] = [
           title: "首页",
           icon: BaseIcon,
         },
+      },
+      {
+        path: "standard",
+        name: "standard",
+        meta: {
+          title: "规范",
+          icon: BaseIcon,
+        },
+        redirect: { name: "project" },
+        children: [
+          {
+            path: "project",
+            name: "project",
+            meta: {
+              title: "项目规范",
+            },
+            component: () => import("@/views/standards/project.vue"),
+          },
+        ],
       },
       {
         path: "fun",
