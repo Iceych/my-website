@@ -2,7 +2,7 @@
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
  * @LastEditors: chengchunlin 1875620109@qq.com
- * @LastEditTime: 2024-08-11 10:26:34
+ * @LastEditTime: 2024-08-11 12:28:14
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -52,6 +52,14 @@ const routes: RouteRecordRaw[] = [
               title: "项目规范",
             },
             component: () => import("@/views/standards/project.vue"),
+          },
+          {
+            path: "js",
+            name: "js",
+            meta: {
+              title: "js规范",
+            },
+            component: () => import("@/views/standards/js.vue"),
           },
         ],
       },
