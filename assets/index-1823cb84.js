@@ -1,4 +1,4 @@
-import{d as o,o as a,c as e,g as c,h as l,w as u,a as r,i as k,j as i}from"./index-a38530ca.js";const g={class:"markdown-body"},y=c(`<blockquote><p>/plugins/injectFiles.ts</p></blockquote><pre class="language-js"><code class="language-js"><span class="token comment">/*
+import{d as o,o as a,c as e,g as c,h as l,w as u,a as r,i as k,j as i}from"./index-2d0c9e3f.js";const g={class:"markdown-body"},y=c(`<blockquote><p>/plugins/injectFiles.ts</p></blockquote><pre class="language-js"><code class="language-js"><span class="token comment">/*
  * @Author: chengchunlin
  * @Date: 2024-03-22 13:23:26
  * @LastEditors: chengchunlin
