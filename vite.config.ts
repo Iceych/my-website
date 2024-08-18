@@ -1,8 +1,8 @@
 /*
  * @Author: chengchunlin
  * @Date: 2024-03-21 08:54:17
- * @LastEditors: chengchunlin chengchunlin@eastmoney.com
- * @LastEditTime: 2024-05-15 19:35:09
+ * @LastEditors: chengchunlin 1875620109@qq.com
+ * @LastEditTime: 2024-08-18 17:28:46
  * @FilePath: /个人项目/vite.config.ts
  * @Description: write something
  *
@@ -23,7 +23,7 @@ import Markdown from "vite-plugin-md";
 
 import injectFiles from "./plugins/injectFiles";
 
-const baseUrlPath = process.env.NODE_ENV === "production" ? "/my-website" : "/";
+const baseUrlPath = process.env.NODE_ENV === "production" ? "/my-website/" : "/";
 
 // https://vitejs.dev/config/
 export default defineConfig({
