@@ -1,4 +1,4 @@
-import{d as o,o as a,c as e,g as c,h as l,w as u,a as i,i as k,j as r}from"./index-b0bc6359.js";const d={class:"markdown-body"},g=c(`<h1 id="css%E8%A7%84%E8%8C%83" tabindex="-1">css规范</h1><h2 id="%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83" tabindex="-1">命名规范</h2><ul><li>类名使用小写字母，以中划线分隔</li></ul><pre class="language-css"><code class="language-css"><span class="token comment">/* class */</span>
+import{d as o,o as a,c as e,g as c,h as l,w as u,a as i,i as k,j as r}from"./index-da6fada2.js";const d={class:"markdown-body"},g=c(`<h1 id="css%E8%A7%84%E8%8C%83" tabindex="-1">css规范</h1><h2 id="%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83" tabindex="-1">命名规范</h2><ul><li>类名使用小写字母，以中划线分隔</li></ul><pre class="language-css"><code class="language-css"><span class="token comment">/* class */</span>
 <span class="token selector">.element-content</span> <span class="token punctuation">{</span>
     ...
 <span class="token punctuation">}</span>
