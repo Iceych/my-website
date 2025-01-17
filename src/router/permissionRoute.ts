@@ -1,8 +1,8 @@
 /*
  * @Author: chengchunlin
  * @Date: 2023-11-01 09:31:33
- * @LastEditors: chengchunlin 1875620109@qq.com
- * @LastEditTime: 2024-08-11 16:16:54
+ * @LastEditors: chengchunlin chengchunlin@eastmoney.com
+ * @LastEditTime: 2025-01-17 10:22:40
  * @FilePath: /个人项目/src/router/permissionRoute.ts
  * @Description: 带权限的路由
  *
@@ -242,12 +242,31 @@ const routes: RouteRecordRaw[] = [
             component: () => import("@/views/vscode/base.vue"),
           },
           {
-            path: "deleteBranch",
-            name: "deleteBranch",
+            path: "commonPlugin",
+            name: "commonPlugin",
             meta: {
               title: "常用插件",
             },
             component: () => import("@/views/vscode/commonPlugin.vue"),
+          },
+        ],
+      },
+      {
+        path: "eslint",
+        name: "eslint",
+        meta: {
+          title: "eslint",
+          icon: BaseIcon,
+        },
+        redirect: { name: "base" },
+        children: [
+          {
+            path: "eslintBase",
+            name: "eslintBase",
+            meta: {
+              title: "eslint常用配置",
+            },
+            component: () => import("@/views/eslint/base.vue"),
           },
         ],
       },
