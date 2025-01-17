@@ -1,4 +1,4 @@
-import{d as o,o as a,c as e,g as c,h as l,w as u,a as r,i as k,j as i}from"./index-4c7f2f6a.js";const g={class:"markdown-body"},y=c(`<blockquote><p>/plugins/injectFiles.ts</p></blockquote><pre class="language-js"><code class="language-js"><span class="token comment">/*
+import{d as o,o as a,c as e,f as c,g as l,w as u,b as r,h as k,i}from"./index-9362ae99.js";const g={class:"markdown-body"},y=o({__name:"配置",setup(p,{expose:s}){return s({frontmatter:{},excerpt:void 0}),(t,n)=>(a(),e("div",g,n[0]||(n[0]=[c(`<blockquote><p>/plugins/injectFiles.ts</p></blockquote><pre class="language-js"><code class="language-js"><span class="token comment">/*
  * @Author: chengchunlin
  * @Date: 2024-03-22 13:23:26
  * @LastEditors: chengchunlin
@@ -124,4 +124,4 @@ import{d as o,o as a,c as e,g as c,h as l,w as u,a as r,i as k,j as i}from"./ind
     <span class="token literal-property property">https</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>`,3),m=[y],d=o({__name:"配置",setup(p,{expose:n}){return n({frontmatter:{},excerpt:void 0}),(t,s)=>(a(),e("div",g,m))}}),w={__name:"index",setup(p){return(n,t)=>{const s=i;return a(),l(s,null,{default:u(()=>[r(k(d),{id:"markdown"})]),_:1})}}};export{w as default};
+</code></pre>`,3)])))}}),d={__name:"index",setup(p){return(s,t)=>{const n=i;return a(),l(n,null,{default:u(()=>[r(k(y),{id:"markdown"})]),_:1})}}};export{d as default};
